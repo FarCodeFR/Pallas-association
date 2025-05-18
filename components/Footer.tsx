@@ -1,9 +1,15 @@
 import "../styles/footer.css";
+import Image from "next/image";
 
 function Footer() {
   return (
     <footer className="container-footer">
-      <img src="/images/logo-footer.jpg" alt="logo pallas" />
+      <Image
+        src="/images/logo-footer.jpg"
+        alt="logo pallas"
+        width={100}
+        height={100}
+      />
       <p>
         Mission et statut associatifs
         <br /> loi 1901 <br />

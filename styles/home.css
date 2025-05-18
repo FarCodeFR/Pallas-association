@@ -31,6 +31,9 @@
     font-family: var(--font);
     font-weight: bold;
     font-size: 20px;
+    & span {
+      display: block;
+    }
   }
   & p {
     font-family: var(--font);
@@ -72,6 +75,9 @@
     font-family: var(--font);
     font-weight: bold;
     font-size: 20px;
+     & span {
+      display: block;
+    }
   }
   & p {
     font-family: var(--font);
