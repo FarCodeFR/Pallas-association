@@ -3,12 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --button: #be2e27;
+  --font: "Outfit", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fef6f4;
     --foreground: #1d1d1d;
+    --font: "Outfit", sans-serif;
   }
 }
 

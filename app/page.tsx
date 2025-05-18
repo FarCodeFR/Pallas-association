@@ -1,6 +1,94 @@
+"use client";
+import { useEffect } from "react";
+import "../styles/home.css";
 
-export default function Home() {
+function Home() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(
+      ".container-page-home, .container-card-one, .container-card-two"
+    );
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add("show");
+      }, index * 200);
+    });
+  }, []);
   return (
-    <h1>Projet Pallas</h1>
-  )
+    <main className="container-page-home">
+      <section className="container-card-one">
+        <h2>
+          Transmettre l'essentiel <br /> pour soi et le vivant
+        </h2>
+        <p>
+          Par le jeu, Pallas éducation transmet aux jeunes des informations{" "}
+          <br /> utiles et pratiques au quotidien pour se sentir bien dans son
+          corps, <br /> dans sa tête et avec son environnement.
+        </p>
+        <picture></picture>
+        <button>Voir les jeux disponibles</button>
+      </section>
+      <section className="container-card-two">
+        <h2>
+          Des escape games et ateliers
+          <br /> conçus pour les jeunes
+        </h2>
+        <p>
+          Optimisé pour les 9-17 ans, nos animateurs adaptent la séance en
+          <br />
+          fonction de l’âge des bénéficiaires, de 7 à 77 ans! En intérieur ou en
+          <br />
+          extérieur, en petit ou grand groupe, découvrez les spécificités de nos
+          <br />
+          scénarios.
+        </p>
+        <picture></picture>
+        <div>
+          <button>Le jardin de l'Olympe</button>
+          <button>L'atelier communication</button>
+        </div>
+      </section>
+      <section className="container-card-one">
+        <h2>
+          Du Marais Poitevin aux bords de Loire, <br /> réserver votre moment
+          d’apprentissage <br /> joyeux
+        </h2>
+        <p>
+          Basés à Clisson, nous intervenons régulièrement dans les <br />
+          établissements scolaires, les espaces jeunes, les missions locales,
+          <br />
+          les centres socio-culturels et les centres de loisirs de Deux-Sèvres,
+          <br />
+          Loire-Atlantique, Maine-et-Loire et Vendée.
+        </p>
+        <picture></picture>
+        <button>Contactez-nous pour plus d’informations</button>
+      </section>
+      <section className="container-card-two">
+        <h2>À propos</h2>
+        <p>
+          Nous proposons des activités conçues par nos équipes ayant pour <br />{" "}
+          but de transmettre de manière ludique, principalement aux jeunes,{" "}
+          <br /> des savoirs leur permettant d’être en meilleure santé mentale
+          et <br /> physique, de gagner en autonomie au quotidien, de participer{" "}
+          <br /> activement à la vie citoyenne et de les préparer à affronter
+          ensemble <br /> les problématiques économiques, sociales et
+          environnementales de demain. <br />
+          <br /> Ayant la volonté de rendre accessible au plus grand nombre nos
+          activités, <br /> nous priorisons nos actions auprès des publics
+          jeunes, <br /> fragiles des Pays de la Loire et des organismes qui les
+          accompagnent.
+          <br /> <br /> Notre équipe de bénévoles est composée d’éducateurs,
+          d’ingénieur
+          <br /> pédagogique, de concepteurs de jeux, de professionnels de la{" "}
+          <br /> communication tous passionnés par l’éducation.
+        </p>
+        <picture></picture>
+        <div>
+          <button>Le jardin de l'Olympe</button>
+          <button>L'atelier communication</button>
+        </div>
+      </section>
+    </main>
+  );
 }
+export default Home;
