@@ -2,6 +2,7 @@
 import "../styles/burger-menu.css";
 import { useState } from "react";
 import NavLink from "next/link";
+import Image from "next/image";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,12 @@ function Header() {
   return (
     <header className="container-navigation">
       <picture>
-        <img src="/images/Red-logo.png" alt="logo pallas" />
+        <Image
+          src="/images/Red-logo.png"
+          alt="logo pallas"
+          width={100}
+          height={100}
+        />
       </picture>
       <button className="burger-button" onClick={toggleMenu}>
         <img src={isOpen ? "/images/close.svg" : "/images/menu.svg"}></img>

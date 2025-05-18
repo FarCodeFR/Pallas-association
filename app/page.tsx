@@ -17,10 +17,10 @@ function Home() {
     <main className="container-page-home">
       <section className="container-card-one">
         <h2>
-          Transmettre l'essentiel <br /> pour soi et le vivant
+          Transmettre l'essentiel <span> pour soi et le vivant </span>
         </h2>
         <p>
-          Par le jeu, Pallas éducation transmet aux jeunes des informations{" "}
+          Par le jeu, Pallas éducation transmet aux jeunes des informations
           <br /> utiles et pratiques au quotidien pour se sentir bien dans son
           corps, <br /> dans sa tête et avec son environnement.
         </p>
@@ -30,7 +30,7 @@ function Home() {
       <section className="container-card-two">
         <h2>
           Des escape games et ateliers
-          <br /> conçus pour les jeunes
+          <span> conçus pour les jeunes </span>
         </h2>
         <p>
           Optimisé pour les 9-17 ans, nos animateurs adaptent la séance en
@@ -49,8 +49,9 @@ function Home() {
       </section>
       <section className="container-card-one">
         <h2>
-          Du Marais Poitevin aux bords de Loire, <br /> réserver votre moment
-          d’apprentissage <br /> joyeux
+          Du Marais Poitevin aux bords de Loire,
+          <span> réserver votre moment d’apprentissage </span>
+          <span>joyeux</span>
         </h2>
         <p>
           Basés à Clisson, nous intervenons régulièrement dans les <br />
