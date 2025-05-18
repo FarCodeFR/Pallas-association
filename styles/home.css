@@ -1,0 +1,103 @@
+
+.container-page-home {
+  margin-top: 30%;
+}
+
+/* ? Annimation Card  */
+
+.container-page-home,
+.container-card-one,
+.container-card-two {
+  opacity: 0;
+  transform: translateX(5rem);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0rem);
+}
+
+/* ? Card One */
+
+.container-card-one {
+ display: flex;
+  gap: 1.5rem;
+  margin-top: 20%;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  & h2 {
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  & p {
+    font-family: var(--font);
+    font-weight: light;
+    font-size: 12px;
+  }
+  & picture {
+    width: 80%;
+    height: 12rem;
+    background-color: rgb(204, 204, 204);
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  & button {
+    cursor: pointer;
+    width: 15rem;
+    height: 3em;
+    background-color: var(--button);
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    margin: 0 auto;
+  }
+}
+
+
+/* ? Card Two */
+
+.container-card-two {
+  margin-top: 20%;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  & h2 {
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  & p {
+    font-family: var(--font);
+    font-weight: light;
+    font-size: 12px;
+  }
+  & picture {
+    width: 80%;
+    height: 12rem;
+    background-color: rgb(204, 204, 204);
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  & div {
+    display: flex;
+  }
+  & button {
+    cursor: pointer;
+    width: 11rem;
+    height: 3em;
+    background-color: var(--button);
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    margin: 0 auto;
+  }
+}

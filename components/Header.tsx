@@ -8,7 +8,10 @@ function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header>
+    <header className="container-navigation">
+      <picture>
+        <img src="/images/Red-logo.png" alt="logo pallas" />
+      </picture>
       <button className="burger-button" onClick={toggleMenu}>
         <img src={isOpen ? "/images/close.svg" : "/images/menu.svg"}></img>
       </button>
