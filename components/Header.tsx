@@ -19,7 +19,12 @@ function Header() {
         />
       </picture>
       <button className="burger-button" onClick={toggleMenu}>
-        <img src={isOpen ? "/images/close.svg" : "/images/menu.svg"}></img>
+        <Image
+          src={isOpen ? "/images/close.svg" : "/images/menu.svg"}
+          alt={isOpen ? "menu burger fermé" : "menu burger ouvert"}
+          width={100}
+          height={100}
+        ></Image>
       </button>
       <div className={`dropdown-menu ${isOpen ? "open" : ""}`}>
         <nav className="menu-item">
