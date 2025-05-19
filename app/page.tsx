@@ -63,7 +63,9 @@ function Home() {
           Loire-Atlantique, Maine-et-Loire et Vendée.
         </p>
         <picture></picture>
-        <button>Contactez-nous pour plus d&#39;informations</button>
+        <button>
+          Contactez-nous pour plus <br /> d&#39;informations
+        </button>
       </section>
       <section className="container-card-two">
         <h2>À propos</h2>
