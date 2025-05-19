@@ -45,8 +45,8 @@
   }
   & button {
     cursor: pointer;
-    min-width: 10rem;
-    max-width: 15rem;
+    min-width: 11rem;
+    max-width: 13rem;
     height: 3em;
     background-color: var(--button);
     color: white;

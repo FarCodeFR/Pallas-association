@@ -19,7 +19,7 @@ function Office() {
       <p id="info-render">
         Compte-rendu des ASSEMBLÉE GÉNÉRALE
         <NavLink href="">
-          <span style={{ color: "red" }}>ici</span>
+          <span style={{ color: "red" }}> ici</span>
         </NavLink>
       </p>
     </>
