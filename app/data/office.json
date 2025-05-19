@@ -1,0 +1,23 @@
+ [
+    {
+      "id": "1",
+      "name": "Justine",
+      "image": "/images/profil-image.png",
+      "post": "Présidente",
+      "alt": "photo de la présidente"
+    },
+    {
+      "id": "2",
+      "name": "Paul",
+      "image": "/images/profil-image.png",
+      "post": "Trésorier",
+      "alt": "photo du trésorier"
+    },
+    {
+      "id": "3",
+      "name": "Robert",
+      "image": "/images/profil-image.png",
+      "post": "Inventeur",
+      "alt": "photo de l'inventeur"
+    }
+  ]
