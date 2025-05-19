@@ -45,8 +45,8 @@
   }
   & button {
     cursor: pointer;
-    min-width: 11rem;
-    max-width: 13rem;
+    min-width: 12rem;
+    max-width: 14rem;
     height: 3em;
     background-color: var(--button);
     color: white;
@@ -80,6 +80,8 @@
     font-family: var(--font);
     font-weight: light;
     font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
   }
   & picture {
     width: 80%;
