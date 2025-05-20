@@ -33,7 +33,6 @@
   }
   & p {
     font-family: var(--font);
-    font-weight: light;
     font-size: 12px;
   }
   & picture {
@@ -78,7 +77,6 @@
   }
   & p {
     font-family: var(--font);
-    font-weight: light;
     font-size: 12px;
     width: 90%;
     margin: 0 auto;

@@ -1,3 +1,14 @@
+/* ? Annimation */
+.container-about {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .container-about > section {
   display: flex;
@@ -5,10 +16,6 @@
   flex-direction: column;
   width: 100%;
   text-align: center;
-  & h1 {
-    font-family: var(--font);
-    font-weight: bold;
-  }
   & h2 {
     font-family: var(--font);
     font-weight: bold;
@@ -19,7 +26,6 @@
   }
   & p {
     font-family: var(--font);
-    font-weight: light;
     font-size: 12px;
     max-width: 90%;
     margin: 0 auto;
@@ -80,7 +86,6 @@
     }
     & p {
       font-family: var(--font);
-      font-weight: light;
     }
   }
 }

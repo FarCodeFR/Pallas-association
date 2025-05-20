@@ -1,0 +1,31 @@
+
+.mySwiper {
+  width: 80%;
+  max-width: 600px;
+  height: auto; 
+  margin: 5% auto;
+  padding-bottom: 40px; 
+}
+
+.partner-slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+}
+
+.swiper-pagination-bullet {
+  background-color: #ccc; 
+  opacity: 0.8;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #be2e27;
+}
+
+.swiper-pagination-bullet:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}

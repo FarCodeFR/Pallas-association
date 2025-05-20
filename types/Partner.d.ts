@@ -3,3 +3,8 @@ export type PartnerType = {
   image: string;
   alt: string;
 };
+
+interface PartnerCarouselProps {
+  partnerImages: PartnerType[];
+  ariaLabel: string;
+}

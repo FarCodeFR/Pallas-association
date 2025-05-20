@@ -1,7 +1,18 @@
+"use client";
 import "../../styles/about.css";
 import Office from "../../components/Office";
 import Partner from "@/components/Partner";
+import { useEffect } from "react";
+
 function About() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".container-about");
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add("show");
+      }, index * 200);
+    });
+  }, []);
   return (
     <main className="container-about">
       <section>

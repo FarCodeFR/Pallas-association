@@ -1,0 +1,28 @@
+/* ? Annimation */
+.container-games {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.container-games {
+  & h1 {
+    text-align: center;
+    margin: 5% auto;
+    font-size:40px ;
+    font-family: var(--font);
+  }
+  h2 {
+    font-family: var(--font);
+    font-weight:600;
+    padding-left: 2rem;
+  }
+  & p {
+    text-align: center;
+  }
+}
