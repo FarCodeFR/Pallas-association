@@ -52,7 +52,7 @@ function Help() {
           <button type="button">Benevolt.fr</button>
           <button type="button">Komeet.cc</button>
           <button type="button">
-            J'aimerai proposer de participer autrement
+            J&#39;aimerai proposer de participer autrement
           </button>
         </div>
       </section>
