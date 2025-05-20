@@ -21,8 +21,6 @@
     font-family: var(--font);
     font-weight: light;
     font-size: 12px;
-    width: 90%;
-    margin: 0 auto;
   }
   & picture {
     width: 80%;
