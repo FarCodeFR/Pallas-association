@@ -8,7 +8,9 @@ function Office() {
       {office.map((el) => {
         return (
           <figure key={el.id} className="container-office">
-            <Image src={el.image} alt={el.alt} width={100} height={100} />
+            <picture>
+              <Image src={el.image} alt={el.alt} width={100} height={100} />
+            </picture>
             <figcaption>
               <h3>{el.name}</h3>
               <p>{el.post}</p>
