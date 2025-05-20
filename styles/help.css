@@ -1,0 +1,40 @@
+.container-help {
+  text-align: center;
+  & section {
+    & h2 {
+      font-weight: 600;
+      font-family: var(--font);
+      margin: 10% auto;
+    }
+    & p {
+      font-family: var(--font);
+      margin: 5% auto;
+      width: 90%;
+      text-align: justify;
+    }
+    & picture {
+      display: block;
+      width: 80%;
+    height: 12rem;
+    background-color: rgb(204, 204, 204);
+    margin: 0 auto;
+    border-radius: 15px;
+    }
+    & div {
+      display: flex;
+      flex-wrap: wrap;
+    & button {
+    cursor: pointer;
+    width: 11rem;
+    height: 3em;
+    background-color: var(--button);
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    margin: 2% auto;
+  }
+    }
+  }
+}
