@@ -1,3 +1,14 @@
+/* ? Annimation */
+.container-about {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .container-about > section {
   display: flex;
@@ -5,10 +16,6 @@
   flex-direction: column;
   width: 100%;
   text-align: center;
-  & h1 {
-    font-family: var(--font);
-    font-weight: bold;
-  }
   & h2 {
     font-family: var(--font);
     font-weight: bold;
@@ -19,9 +26,8 @@
   }
   & p {
     font-family: var(--font);
-    font-weight: light;
     font-size: 12px;
-    width: 90%;
+    max-width: 90%;
     margin: 0 auto;
   }
   & picture {
@@ -36,7 +42,7 @@
   }
   & button {
     cursor: pointer;
-    min-width: 7rem;
+    width: 7rem;
     min-height: 3em;
     background-color: var(--button);
     color: white;
@@ -56,11 +62,16 @@
 }
 
 .container-about > .container-office {  
-  width: 30%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 5% auto;
+  & picture {
+    width: 40%;
+    height:40%;
+    margin: 0 auto;
+  }
   & img {
     border-radius: 50%;
     width: 100%;
@@ -75,7 +86,6 @@
     }
     & p {
       font-family: var(--font);
-      font-weight: light;
     }
   }
 }
@@ -86,8 +96,11 @@
   font-family: var(--font);
   font-weight: light;
   text-align: center;
+  width: 100%;
   & span {
     cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -97,6 +110,7 @@
 .partner-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 2rem;
   align-items: center;
   margin: 5% auto;
@@ -105,7 +119,9 @@
 .partner-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
+  max-width: 90%;
   gap: 2rem;
 }
 

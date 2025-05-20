@@ -38,6 +38,16 @@ body {
   margin: 0;
 }
 
+ h1 {
+    font-size:40px ;
+    font-family: var(--font);
+    font-weight: bold;
+  }
+
+  p {
+    font-weight: 300;
+  }
+
 a {
   font-family:  "Outfit", sans-serif;
   font-weight: bold;
