@@ -53,21 +53,28 @@ function Contact() {
             type="email"
             id="email"
             name="name"
+            required
             placeholder="Jean-50@live.fr"
           />
         </div>
         <div className="container-form-div">
           <label htmlFor="name">Nom</label>
-          <input type="text" id="name" name="name" placeholder="Jean" />
+          <input
+            type="text"
+            required
+            id="name"
+            name="name"
+            placeholder="Jean"
+          />
         </div>
         <section>
           <div>
             <label htmlFor="particulier">Particulier</label>
-            <input type="radio" name="clientType" id="particulier" />
+            <input required type="radio" name="clientType" id="particulier" />
           </div>
           <div>
             <label htmlFor="entreprise">Entreprise</label>
-            <input type="radio" name="clientType" id="entreprise" />
+            <input required type="radio" name="clientType" id="entreprise" />
           </div>
         </section>
         <div className="container-form-div">

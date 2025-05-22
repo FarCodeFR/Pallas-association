@@ -3,6 +3,7 @@ import "../../styles/about.css";
 import Office from "../../components/Office";
 import Partner from "@/components/Partner";
 import { useEffect } from "react";
+import NavLink from "next/link";
 
 function About() {
   useEffect(() => {
@@ -36,9 +37,9 @@ function About() {
           <br /> communication tous passionnés par l&#39;éducation.
         </p>
         <div>
-          <button>Nous aider</button>
-          <button>Adhérer</button>
-          <button>Nous contacter</button>
+          <NavLink href="nous-aider">Nous aider</NavLink>
+          <NavLink href="">Adhérer</NavLink>
+          <NavLink href="contact">Nous contacter</NavLink>
         </div>
         <picture></picture>
       </section>
