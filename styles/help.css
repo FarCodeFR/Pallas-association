@@ -1,3 +1,15 @@
+/* ? Annimation */
+.container-help {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .container-help {
   text-align: center;
   & section {

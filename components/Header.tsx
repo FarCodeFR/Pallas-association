@@ -14,6 +14,7 @@ function Header() {
       <picture>
         <NavLink href="/">
           <Image
+            priority
             src="/images/Red-logo.png"
             alt="logo pallas"
             width={100}

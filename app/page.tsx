@@ -4,6 +4,7 @@ import "../styles/home.css";
 
 function Home() {
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const elements = document.querySelectorAll(
       ".container-page-home, .container-card-one, .container-card-two"
     );

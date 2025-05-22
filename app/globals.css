@@ -59,6 +59,13 @@ a {
    outline: 3px dashed  rgb(60, 60, 60);
   border-radius: 15px;
 }
+button:focus {
+  outline: none;
+}
+button:focus-visible {
+   outline: 3px dashed  rgb(60, 60, 60);
+  border-radius: 15px;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

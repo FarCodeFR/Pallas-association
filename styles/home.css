@@ -6,12 +6,15 @@
 .container-card-two {
   opacity: 0;
   transform: translateX(5rem);
+    visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
 .show {
   opacity: 1;
-  transform: translateX(0rem);
+  transform: translateX(0rem);  visibility: visible;
+  pointer-events: auto;
 }
 
 /* ? Card One */
