@@ -6,6 +6,7 @@ import { useEffect } from "react";
 
 function About() {
   useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const elements = document.querySelectorAll(".container-about");
     elements.forEach((el, index) => {
       setTimeout(() => {

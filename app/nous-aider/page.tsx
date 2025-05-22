@@ -1,5 +1,16 @@
+"use client";
+import { useEffect } from "react";
 import "../../styles/help.css";
 function Help() {
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const elements = document.querySelectorAll(".container-help");
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add("show");
+      }, index * 200);
+    });
+  }, []);
   return (
     <main className="container-help">
       <section>
