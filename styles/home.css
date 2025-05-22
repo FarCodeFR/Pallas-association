@@ -45,15 +45,17 @@
     margin: 0 auto;
     border-radius: 15px;
   }
-  & button {
+  & a {
     cursor: pointer;
-    min-width: 12rem;
-    max-width: 14rem;
-    height: 3em;
+    align-content: center;
+    min-width: 13rem;
+    max-width: 15rem;
+    height: 3.2em;
     background-color: var(--button);
     color: white;
     font-family: var(--font);
     font-weight: bold;
+    padding: 6px;
     border-radius: 20px;
     border: none;
     margin: 0 auto;
@@ -94,8 +96,9 @@
   & div {
     display: flex;
   }
-  & button {
+  &  a {
     cursor: pointer;
+    align-content: center;
     width: 11rem;
     height: 3em;
     background-color: var(--button);
@@ -103,6 +106,7 @@
     font-family: var(--font);
     font-weight: bold;
     border-radius: 20px;
+    padding: 5px;
     border: none;
     margin: 2% auto;
   }

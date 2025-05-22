@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import "../styles/home.css";
+import NavLink from "next/link";
 
 function Home() {
   useEffect(() => {
@@ -26,7 +27,7 @@ function Home() {
           corps, <br /> dans sa tête et avec son environnement.
         </p>
         <picture></picture>
-        <button>Voir les jeux disponibles</button>
+        <NavLink href="les-jeux">Voir les jeux disponibles</NavLink>
       </section>
       <section className="container-card-two">
         <h2>
@@ -45,8 +46,8 @@ function Home() {
         </p>
         <picture></picture>
         <div>
-          <button>Le jardin de l&#39;Olympe</button>
-          <button>L&#39;atelier communication</button>
+          <NavLink href="les-jeux">Le jardin de l&#39;Olympe</NavLink>
+          <NavLink href="les-jeux">L&#39;atelier communication</NavLink>
         </div>
       </section>
       <section className="container-card-one">
@@ -64,9 +65,9 @@ function Home() {
           Loire-Atlantique, Maine-et-Loire et Vendée.
         </p>
         <picture></picture>
-        <button>
+        <NavLink href="contact">
           Contactez-nous pour plus <br /> d&#39;informations
-        </button>
+        </NavLink>
       </section>
       <section className="container-card-two">
         <h2>À propos</h2>
@@ -90,8 +91,8 @@ function Home() {
         </p>
         <picture></picture>
         <div>
-          <button>Le jardin de l&#39;Olympe</button>
-          <button>L&#39;atelier communication</button>
+          <NavLink href="A-propos">En savoir plus</NavLink>
+          <NavLink href="nous-aider">Nous aider</NavLink>
         </div>
       </section>
     </main>

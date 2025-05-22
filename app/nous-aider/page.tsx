@@ -1,6 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import "../../styles/help.css";
+import NavLink from "next/link";
+
 function Help() {
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -62,9 +64,7 @@ function Help() {
         <div>
           <button type="button">Benevolt.fr</button>
           <button type="button">Komeet.cc</button>
-          <button type="button">
-            J&#39;aimerai proposer de participer autrement
-          </button>
+          <NavLink href="contact">J&#39;aimerai participer autrement</NavLink>
         </div>
       </section>
     </main>

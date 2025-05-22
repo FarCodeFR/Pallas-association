@@ -40,10 +40,12 @@
   & div {
     display: flex;
   }
-  & button {
+  & a {
     cursor: pointer;
+    align-content: center;
+    padding: 5px;
     width: 7rem;
-    min-height: 3em;
+    max-height: 3em;
     background-color: var(--button);
     color: white;
     font-family: var(--font);

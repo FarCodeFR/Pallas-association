@@ -35,8 +35,10 @@
     & div {
       display: flex;
       flex-wrap: wrap;
-    & button {
+    & button, a {
     cursor: pointer;
+    padding: 5px;
+    align-content: center;
     width: 11rem;
     height: 3em;
     background-color: var(--button);
