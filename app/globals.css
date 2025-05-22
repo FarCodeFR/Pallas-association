@@ -48,6 +48,10 @@ body {
     font-weight: 300;
   }
 
+  a {
+    font-size: 14px;
+  }
+
 a {
   font-family:  "Outfit", sans-serif;
   font-weight: bold;
