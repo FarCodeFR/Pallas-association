@@ -1,6 +1,6 @@
 "use client";
 import "../styles/burger-menu.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavLink from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -9,9 +9,12 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
-
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
-  const isActive = (href: string) => pathname === href;
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  const isActive = (href: string) => mounted && pathname === href;
 
   return (
     <header className="container-navigation">

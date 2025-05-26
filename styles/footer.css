@@ -9,11 +9,15 @@
   align-items: center;
   margin-top: 6%;
   & img {
+    position: absolute;
+    z-index: 2;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
   }
   & p {
+    position: relative;
+    z-index: 1;
     text-align: center;
     width: 100%;
     color: white;

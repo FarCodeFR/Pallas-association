@@ -63,7 +63,7 @@
   font-weight: bold;
 }
 
-.container-about > .container-office {  
+.container-about > .container-team > .container-office {  
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@
 
 #info-render {
   font-family: var(--font);
-  font-weight: light;
+  font-weight: 300;
   text-align: center;
   width: 100%;
   & span {
@@ -131,3 +131,117 @@
   width: 100px;
   height: 100px;
 }
+
+/* ? Responsive Desktop */
+
+@media screen and (min-width: 600px) {
+  /* ? CSS Partner */
+
+.partner-container {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.partner-item {
+  width:150px;
+  margin: 0 auto;
+  height: 100px;
+}
+  }
+  
+
+@media screen and (min-width:900px ) {
+  .container-about > section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  & h2 {
+    font-size: 40px;
+  }
+  & p {
+    font-size: 20px;
+  }
+  & picture {
+    width: 80%;
+    height: 30rem;
+    background-color: rgb(204, 204, 204);
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+  & div {
+    display: flex;
+    justify-content: center;
+  }
+  & a {
+    display: block;
+    font-size: 15px;
+    min-width: 13rem;
+    max-width: 15rem;
+    height: 3.2em;
+    margin: 3%;
+    border: none;
+  }
+ & a:hover {
+  border: solid 2px var(--button);
+  background-color: #FED8D9; 
+  color: black;
+  }}
+
+  .container-about > h2 {
+  margin-top: 10%;
+ text-align: center;
+  font-size: 40px;
+}
+
+.container-about > .container-team {
+  display: flex;
+  margin: 5% auto;
+  width: 70%;
+}
+
+.container-about > .container-team > .container-office {  
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% auto;
+  & picture {
+    width: 200px;
+    height:200px;
+    margin: 0 auto;
+    & img {
+      object-fit: cover;
+    }
+  }
+  & figcaption {
+    text-align: center;
+    padding: 10px;
+    & h3 {
+      font-family: var(--font);
+      font-weight: bold;
+      font-size: 26px;
+    }
+    & p {
+      font-family: var(--font);
+      font-size: 20px;
+    }
+  }
+}
+#info-render, span{
+  font-size: 20px; 
+}
+
+
+/* ? CSS Partner */
+
+.partner-container {
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+}
+.partner-item {
+  width: 15em;
+  margin: 0 auto;
+  height: 100px;
+}
+  }
