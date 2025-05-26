@@ -5,19 +5,21 @@ import office from "../app/data/office.json";
 function Office() {
   return (
     <>
-      {office.map((el) => {
-        return (
-          <figure key={el.id} className="container-office">
-            <picture>
-              <Image src={el.image} alt={el.alt} width={100} height={100} />
-            </picture>
-            <figcaption>
-              <h3>{el.name}</h3>
-              <p>{el.post}</p>
-            </figcaption>
-          </figure>
-        );
-      })}
+      <div className="container-team">
+        {office.map((el) => {
+          return (
+            <figure key={el.id} className="container-office">
+              <picture>
+                <Image src={el.image} alt={el.alt} width={100} height={100} />
+              </picture>
+              <figcaption>
+                <h3>{el.name}</h3>
+                <p>{el.post}</p>
+              </figcaption>
+            </figure>
+          );
+        })}
+      </div>
       <p id="info-render">
         Compte-rendu des ASSEMBLÉE GÉNÉRALE
         <NavLink href="">
