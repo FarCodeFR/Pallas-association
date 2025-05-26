@@ -69,7 +69,7 @@ function Home() {
           Contactez-nous pour plus <br /> d&#39;informations
         </NavLink>
       </section>
-      <section className="container-card-two">
+      <section className="container-card-three">
         <h2>À propos</h2>
         <p>
           Nous proposons des activités conçues par nos équipes ayant pour <br />

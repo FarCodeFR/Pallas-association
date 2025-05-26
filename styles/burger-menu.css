@@ -24,7 +24,6 @@
   width: 45px;
   top: 20px;
   right: 20px;
-  overflow: hidden;
   border: none;
   background: transparent;
   z-index: 101;
@@ -76,3 +75,64 @@
 }
 
 
+@media screen and (min-width: 660px) {
+  .container-navigation > picture {
+    width: 250px;
+    height: 90px;
+    padding: 10px;
+  }
+  .burger-button {
+    display: none;
+  }
+ .dropdown-menu {
+  position: relative;
+  background-image: none;
+  top: 0;
+  padding-top: 0;
+  align-content: center;
+ }
+ .menu-item { 
+  width: 100%;
+  padding: 0;
+  & ul {
+    flex-direction: row; 
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  & li {
+    display: flex;
+    flex: 1 1 auto;
+    min-width: 115px;
+ max-width: 180px;
+    &  a {
+      display: flex;
+       align-items: center;
+      justify-content: center; 
+ width: 100%;
+  height: 40px;
+  background-color: var(--button);
+  border-radius: 50px;
+    }
+    & a:hover {
+       border: solid 2px var(--button);
+  background-color: #FED8D9; 
+    color: black;
+    }
+  }
+    & a {
+  font-size: 20px;
+  color: white;
+ }
+}
+.menu-item ul a.active {
+ border: solid 2px var(--button);
+  background-color: #FED8D9;
+}
+
+.menu-item ul a.active  {
+  color: rgb(0, 0, 0); 
+}
+
+}
