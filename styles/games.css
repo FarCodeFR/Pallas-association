@@ -26,3 +26,75 @@
     text-align: center;
   }
 }
+
+.first-carrousel > img {
+  display: none;
+}
+.second-carrousel > img {
+  display: none;
+}
+
+@media screen and (min-width: 1350px) {
+  /* first carrousel */
+  .first-carrousel > img {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 7%;
+    left: 0;
+    width: 85%;
+    height: 35%;
+    object-fit: fill;
+}
+  .first-carrousel {
+    height: 90vh;
+    margin-top: 15% ;
+  }
+  .first-carrousel > .mySwiper:first-of-type {
+   margin: 0 5%;
+  }
+  .first-carrousel > h2:first-of-type {
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    right: 30%;
+  }
+.first-carrousel > p:first-of-type {
+  position: absolute;
+  color: white;
+  right: 35%;
+  top:25%;
+}
+  /* second carrousel */
+
+   .second-carrousel > img {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    bottom: 4%;
+    right: 0;
+    width: 85%;
+    height: 40%;
+    object-fit: fill;
+}
+  .second-carrousel {
+    height: 85vh;
+    margin:0% auto;
+  }
+   .second-carrousel > .mySwiper:last-of-type {
+   margin-right: 5%;
+  }
+  .second-carrousel > h2:last-of-type {
+    position: absolute;
+    font-size: 48px;
+    color: white;
+    left: 30%;
+  }
+  .second-carrousel > p:last-of-type {
+    position: absolute;
+    left: 40%;
+    color: white;
+    bottom: 25%;
+  }
+  
+}
