@@ -157,7 +157,7 @@ button:focus-visible {
   }
 }
 
-.style-line {
+.style-line-contact {
   z-index: 0;
     pointer-events: none;
     background-image: url(/images/contact-line.png);
@@ -230,7 +230,7 @@ button:focus-visible {
     & label {
       left: 10%;
     }
-  }.style-line {
+  }.style-line-contact {
     height: 122%;
     top: -72px;
     left: 54%;

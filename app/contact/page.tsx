@@ -21,7 +21,7 @@ function Contact() {
   }, []);
   return (
     <main className="container-contact">
-      <div className="style-line"></div>
+      <div className="style-line-contact"></div>
       <h1>Nous contacter</h1>
       <p>
         Vous avez besoin d&#39;informations complémentaires, contactez-nous:

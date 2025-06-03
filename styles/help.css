@@ -13,6 +13,7 @@
 .container-help {
   text-align: center;
   & section {
+    position: relative;
     & h2 {
       font-weight: 600;
       font-family: var(--font);
@@ -22,6 +23,7 @@
       font-family: var(--font);
       margin: 5% auto;
       width: 90%;
+      background-color: var(--background);
       text-align: justify;
     }
     & picture {
@@ -56,6 +58,23 @@
   }}
     }
   }
+
+  .style-line-help {
+  z-index: 0;
+    pointer-events: none;
+    background-image: url(/images/line-help.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1200px;
+    height: 104%;
+    position: absolute;
+          top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 
 
@@ -112,4 +131,21 @@
     margin: 2% auto;
   }
 }
-  }}
+  }
+}
+@media screen and (min-width: 1200px) {
+  .style-line-help {
+    left:50%;
+    height: 100%;
+    top: 3%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+   .style-line-help {
+    max-width: 100%;
+    left: 55%;
+    top:5%;
+  }
+}
