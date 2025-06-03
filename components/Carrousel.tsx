@@ -43,10 +43,9 @@ function PartnerCarousel({ partnerImages, ariaLabel }: PartnerCarouselProps) {
               <Image
                 src={partner.image}
                 alt={partner.alt}
-                width={600}
-                height={400}
-                layout="responsive"
-                objectFit="cover"
+                width={500}
+                height={300}
+                style={{ objectFit: "cover" }}
                 priority
               />
             </div>

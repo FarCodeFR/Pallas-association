@@ -12,11 +12,9 @@
 
 .container-contact {
   text-align: center;
-
   & h1 {
     margin: 5% auto;
   }
-
   & p {
     width: 80%;
     margin: 0 auto;
@@ -85,6 +83,7 @@ button:focus-visible {
 
 .container-form {
   display: flex;
+  position: relative;
   justify-content: center;
   flex-direction: column;
   width: 100%;
@@ -98,6 +97,7 @@ button:focus-visible {
     
     & div {
       display: flex;
+      background-color: var(--background);
       border: solid 2px var(--button);
       border-radius: 20px;
       width: 50%;
@@ -106,7 +106,6 @@ button:focus-visible {
       height: 2em;
       gap: 10px;
       padding: 5px;
-
       & label {
         font-family: var(--font);
         font-weight: 600;
@@ -117,7 +116,7 @@ button:focus-visible {
       & input[type="radio"] {
         width: 1.3em;
         height: 1.3em;
-        background-color: white;
+        background-color: var(--background);
         border-radius: 50%;
         vertical-align: middle;
         border: 1px solid #01010154;
@@ -146,7 +145,7 @@ button:focus-visible {
     border: solid 2px var(--button);
     color: black;
     font-weight: 600;
-    background: none;
+    background: var(--background);
     border-radius: 10px;
   }
 
@@ -156,6 +155,22 @@ button:focus-visible {
     color: white;
     border: none;
   }
+}
+
+.style-line {
+  z-index: 0;
+    pointer-events: none;
+    background-image: url(/images/contact-line.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 1200px;
+    height: 122%;
+    position: absolute;
+       top: -45px;
+    left: 55%;
+    transform: translateX(-50%);
 }
 
 
@@ -177,6 +192,7 @@ button:focus-visible {
   & input {
     width: 100%;
     height: 100%;
+    background-color: var(--background);
     border: solid 2px var(--button);
     border-radius: 20px;
     padding: 10px;
@@ -185,7 +201,7 @@ button:focus-visible {
 			width: 100%;
 			min-height: 20vh;
       max-height: 100%;
-			background: #ffffff;
+			background: var(--background);
 			color: rgb(0, 0, 0);
 			border: solid var(--button) 2px;
 			padding: 15px;
@@ -194,7 +210,38 @@ button:focus-visible {
 		}
 }
 
-
+@media screen and (min-width: 1000px) {
+  .container-number {
+    margin: 2% auto;
+  }
+  .container-contact {
+    & p {
+      font-size: 20px;
+    }
+  }
+  .container-form {
+    width: 50%;
+    margin: 5% auto;
+  }
+  .container-form > section > div {
+    width: 10em;
+    height: 2.5em;
+    gap: 30%;
+    & label {
+      left: 10%;
+    }
+  }.style-line {
+    height: 122%;
+    top: -72px;
+    left: 54%;
+}
+}
+@media screen and (min-width: 1300px) {
+  .container-form {
+    width: 40%;
+  }
+  
+}
 
 
 
