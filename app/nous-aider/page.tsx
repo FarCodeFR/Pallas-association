@@ -16,6 +16,7 @@ function Help() {
   }, []);
   return (
     <main className="container-help">
+      <div className="style-line-help"></div>
       <section>
         <h1>Nous aider</h1>
         <p>
