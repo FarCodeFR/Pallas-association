@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import "../../styles/help.css";
 import NavLink from "next/link";
+import Link from "next/link";
 
 function Help() {
   useEffect(() => {
@@ -23,12 +24,12 @@ function Help() {
           réduits ou gratuitement, nous avons besoin de vous!
         </p>
         <div>
-          <button type="button">J&#39;adhère</button>
-          <button type="button">Je donne de l&#39;argent</button>
-          <button type="button">Je donne de mon temps</button>
+          <Link href="#adhere">J&#39;adhère</Link>
+          <Link href="#sustain">Je donne de l&#39;argent</Link>
+          <Link href="#time">Je donne de mon temps</Link>
         </div>
       </section>
-      <section>
+      <section id="adhere">
         <h2>J&#39;adhère à pallas éducation</h2>
         <p>
           En adhérant à Pallas éducation, vous soutenez l&#39;association et
@@ -36,10 +37,10 @@ function Help() {
           selon votre profil.
         </p>
         <div>
-          <button type="button">J&#39;adhère</button>
+          <NavLink href="">J&#39;adhère</NavLink>
         </div>
       </section>
-      <section>
+      <section id="sustain">
         <h2>Je donne de l&#39;argent</h2>
         <p>
           Association d&#39;intérêt général, Pallas éducation vous délivre des
@@ -50,10 +51,10 @@ function Help() {
           dons mensuels qui nous permettent d’avoir une trésorerie sans tension.
         </p>
         <div>
-          <button type="button">Je donne via HelloAsso</button>
+          <NavLink href="">Je donne via HelloAsso</NavLink>
         </div>
       </section>
-      <section>
+      <section id="time">
         <h2>Je donne de mon temps</h2>
         <picture></picture>
         <p>
@@ -62,8 +63,8 @@ function Help() {
           différentes plateformes:
         </p>
         <div>
-          <button type="button">Benevolt.fr</button>
-          <button type="button">Komeet.cc</button>
+          <NavLink href="">Benevolt.fr</NavLink>
+          <NavLink href="">Komeet.cc</NavLink>
           <NavLink href="contact">J&#39;aimerai participer autrement</NavLink>
         </div>
       </section>

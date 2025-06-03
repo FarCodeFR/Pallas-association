@@ -35,7 +35,7 @@
     & div {
       display: flex;
       flex-wrap: wrap;
-    & button, a {
+    &  a {
     cursor: pointer;
     padding: 5px;
     align-content: center;
@@ -49,6 +49,67 @@
     border: none;
     margin: 2% auto;
   }
+ & a:hover {
+  border: solid 2px var(--button);
+  background-color: #FED8D9; 
+  color: black;
+  }}
     }
   }
+
+
+
+/* ? Responsive Desktop */
+
+@media screen and (min-width: 1000px) {
+  .container-help > section {
+   height: 100vh;
+        scroll-margin-top: 150px; 
+
+  }
+  .container-help > section > p {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .container-help > section > h2 {
+    margin: 5% auto;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .container-help > section > div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15% ;
+    & button {
+      margin: 5% 5%;
+        }
+  }
+  .container-help > section  { 
+      & picture {
+    width: 50%;
+    height: 50vh;
+    }
+    & div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+      margin: 2% auto;
+    &  a {
+    cursor: pointer;
+    padding: 5px;
+    align-content: center;
+    width: 12rem;
+    height: 3em;
+    background-color: var(--button);
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    margin: 2% auto;
+  }
 }
+  }}
