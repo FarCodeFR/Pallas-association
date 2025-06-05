@@ -182,7 +182,21 @@
     margin: 2% auto;
   }}
 }
-
+.style-line-home {
+  z-index: -1;
+    pointer-events: none;
+    background-image: url(/images/line-home-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1200px;
+    height: 104%;
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* ? Responsive Desktop */
 
 @media screen and (min-width: 600px) {
@@ -384,5 +398,10 @@
         font-size: 20px;
       }
     }
+  }
+  .style-line-home {
+    top: -10%;
+    left: 50%;
+    rotate: 50deg;
   }
 }

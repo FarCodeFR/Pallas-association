@@ -17,6 +17,7 @@ function Home() {
   }, []);
   return (
     <main className="container-page-home">
+      <div className="style-line-home"></div>
       <section className="container-card-one">
         <article>
           <h2>
