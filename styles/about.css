@@ -132,7 +132,31 @@
   height: 100px;
 }
 
+.style-line-about {
+  z-index: -1;
+    pointer-events: none;
+    background-image: url(/images/line-about-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    position: absolute;
+       top: 7%;
+    left: 53%;
+    transform: translateX(-50%);
+}
 /* ? Responsive Desktop */
+
+@media screen and (min-width:450px) {
+  .style-line-about {
+  z-index: -1;
+    background-image: url(/images/line-about-desktop.png);
+    height: 100%;
+    left: 50%;
+  }
+}
 
 @media screen and (min-width: 600px) {
   /* ? CSS Partner */
@@ -227,6 +251,14 @@
     }
   }
 }
+
+.style-line-about {
+  z-index: -1;
+    background-image: url(/images/line-about-desktop.png);
+    height: 100%;
+    left: 30%;
+    top: -22%;
+  }
 #info-render, span{
   font-size: 20px; 
 }
