@@ -88,10 +88,14 @@
 /* ? Responsive Desktop */
 
 @media screen and (min-width: 1000px) {
-  .container-help > section {
+  .container-help > section:nth-of-type(-n+3) {
    height: 100vh;
    scroll-margin-top: 150px; 
   }
+  .container-help > section:nth-of-type(4){
+    height: 100%;
+  }
+
   .container-help > section > p {
     text-align: center;
     width: 40%;
