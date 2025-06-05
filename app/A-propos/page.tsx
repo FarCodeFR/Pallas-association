@@ -17,6 +17,7 @@ function About() {
   }, []);
   return (
     <main className="container-about">
+      <div className="style-line-about"></div>
       <section>
         <h1>À propos</h1>
         <p>
