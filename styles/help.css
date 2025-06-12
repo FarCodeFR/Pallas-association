@@ -12,11 +12,16 @@
 
 .container-help {
   text-align: center;
+  & section:first-of-type {
+    height: 100%;
+  }
   & section:nth-of-type(-n+3) {
-      height: 100vh;
+      height: 79vh;
+      align-content: center;
     }
   & section:nth-of-type(4){
     height: 60vh;
+    align-content: center;
   }
   & section {
     position: relative;
@@ -88,8 +93,13 @@
 /* ? Responsive Desktop */
 
 @media screen and (min-width: 1000px) {
+  .container-help > section:first-of-type {
+    margin: 0 auto;
+    height: 100%;
+    align-content: center;
+  }
   .container-help > section:nth-of-type(-n+3) {
-   height: 100vh;
+   height: 79vh;
    scroll-margin-top: 150px; 
   }
   .container-help > section:nth-of-type(4){
@@ -155,7 +165,7 @@
 @media screen and (min-width: 1550px) {
    .style-line-help {
     max-width: 100%;
-    left: 55%;
+    left: 63%;
     top:5%;
   }
 }

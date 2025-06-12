@@ -22,7 +22,10 @@ function Office() {
       </div>
       <p id="info-render">
         Compte-rendu des ASSEMBLÉE GÉNÉRALE
-        <NavLink href="">
+        <NavLink
+          target="_blank"
+          href="https://drive.google.com/drive/folders/1gGjtHR9XAz7pwWGGRNM2CB8iaj0H2VGi"
+        >
           <span style={{ color: "red" }}> ici</span>
         </NavLink>
       </p>

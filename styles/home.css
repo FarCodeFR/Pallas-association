@@ -8,11 +8,13 @@
   transform: translateX(5rem);
     visibility: hidden;
   pointer-events: none;
+  margin: 40% auto;
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
 }
 
 .show {
   opacity: 1;
+  margin: 0 auto;
   transform: translateX(0rem);  visibility: visible;
   pointer-events: auto;
 }
@@ -39,17 +41,22 @@
   & p {
     font-family: var(--font);
     font-size: 12px;
-  }}
-  & div {width: 100%;
-  height: 40vh;
-  margin: 0 auto;
+  }
+& a {
+  margin: 6% auto;
+}}
   & picture {
+    margin: 0 auto;
     display: block;
     width: 80%;
-    height: 12rem;
-    background-color: rgb(204, 204, 204);
-    margin:5% auto;
+    height: 12em;
+    margin: 0% auto;
     border-radius: 15px;
+    & img {
+     object-fit: cover;
+     object-position: top;
+     border-radius: 15px;
+    }
   }
   & a {
     display: block;
@@ -67,7 +74,7 @@
     border: none;
     margin: 0 auto;
   }}
-}
+
 
 
 /* ? Card Two */
@@ -95,21 +102,26 @@
     width: 90%;
     margin: 0 auto;
   }
+  & div {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin:5% auto;
+  
+  }
 }
-& div {
-  width: 100%;
-  height: 40vh;
-  margin: 0 auto;
-  & picture {
+ & picture {
+    width: 100%;
+    height: 40vh;
+    margin: 0 auto;
     display: block;
     width: 80%;
     height: 12rem;
-    background-color: rgb(204, 204, 204);
-    margin: 5% auto;
-    border-radius: 15px;
-  }
-  & div {
-    display: flex;
+    margin: 0% auto;
+    & img {
+      border-radius: 15px;
+      object-fit: cover;
+    }
   }
   &  a {
     cursor: pointer;
@@ -125,7 +137,7 @@
     border: none;
     margin: 2% auto;    
   }}
-}
+
 
 .container-card-three {
   margin-top: 20%;
@@ -150,21 +162,24 @@
     width: 90%;
     margin: 0 auto;
   }
-} & div {
-  width: 100%;
-  height: 40vh;
-  & picture {
+} 
+& picture {
+    width: 100%;
+    height: 40vh;
     display: block;
     width: 80%;
     height: 12rem;
     background-color: rgb(204, 204, 204);
     margin: 0 auto;
-    border-radius: 15px;
+    & img {
+      object-fit: cover;
+      object-position: center;
+      border-radius: 15px;
+    }
   }
   & div {
     display: flex;
     width: 100%;
-  height: 0vh;
   margin: 5% auto;
   }
   &  a {
@@ -181,7 +196,7 @@
     border: none;
     margin: 2% auto;
   }}
-}
+
 .style-line-home {
   z-index: -1;
     pointer-events: none;
@@ -198,17 +213,45 @@
     transform: translateX(-50%);
 }
 /* ? Responsive Desktop */
+@media screen and (min-width: 500px) {
+ .container-card-one
+> picture {
+  height: 15rem;
+  }
+ 
+}
 
 @media screen and (min-width: 600px) {
   .container-card-one > article  {
-    & h2 {font-size: 35px;}
+    & h2 {font-size: 30px;}
     & p {
      font-size: 15px;
+    }
+  }
+  .container-card-two > article {
+     & h2 {
+      font-size: 30px;
+     }
+     & p {
+      font-size: 15px;
+     }
+  }
+  .container-card-three article  {
+    & h2 {
+      font-size: 30px;
+    }
+    & p  { font-size: 15px;
     }
   }
 }
 
 @media screen and (min-width: 700px) {
+  .container-card-one > picture {
+    height: 20rem;
+  }
+  .container-card-two > div > picture {
+    height: 20rem;
+  }
   .container-card-one > div > picture {
     height: 20rem;
   }
@@ -235,15 +278,20 @@
     font-size: 16px;
   }
 }
-& div {
-  width: 45%;
-  height: 30vh;
-  & picture {
+& picture {
+    margin: 0 auto;
     display: block;
-    width: 100%;
+    width: 60%;
     height: 100%;
+    margin:0% auto;
+    border-radius: 15px;
+    & img {
+     object-fit: cover;
+     object-position: top;
+     border-radius: 15px;
+    }
   }
-  & a {
+   a {
     display: block;
     font-size: 15px;
     min-width: 13rem;
@@ -257,7 +305,7 @@
   background-color: #FED8D9; 
   color: black;
   }}
-}
+
 /* ? Card Two */
 
 
@@ -266,6 +314,7 @@
   flex-direction: row-reverse;
   margin: 30% auto;
   width: 90%;
+  gap: 2rem;
   & article {
     display: flex;
     width: 50%;
@@ -280,7 +329,7 @@
 }
 & div {
    width: 45%;
-  height: 30vh;
+  height: 100%;
   & picture {
     display: block;
     width: 100%;
@@ -335,7 +384,8 @@
   }
 } & div {
   width: 100%;
-  height:40vh;
+  height:100%;
+  justify-content: center;
   margin: 3% auto;
   & picture {
     display: block;
@@ -354,7 +404,7 @@
 }  &  a {
     cursor: pointer;
     align-content: center;
-    width: 15%;
+    width: 20%;
     height: 3em;
     background-color: var(--button);
     color: white;
@@ -386,7 +436,9 @@
   }
   .container-card-three {
     & div {
-      height: 50vh;
+      height: 100%;
+      justify-content: center;
+      margin: 5% 0 0 ;
     }
   }
   .container-card-one, .container-card-two,.container-card-three {

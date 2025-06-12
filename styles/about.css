@@ -99,6 +99,9 @@
   font-weight: 300;
   text-align: center;
   width: 100%;
+  & a {
+    font-size: 20px;
+  }
   & span {
     cursor: pointer;
     width: 100%;
@@ -115,7 +118,7 @@
   width: 100%;
   gap: 2rem;
   align-items: center;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 
 .partner-row {
@@ -270,6 +273,7 @@
   justify-content: center;
   width: 80%;
   text-align: center;
+  margin: 5% auto;
 }
 .partner-item {
   width: 15em;

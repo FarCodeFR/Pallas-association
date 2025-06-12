@@ -1,4 +1,6 @@
 .container-footer {
+  display: flex;
+  flex-direction: column;
   position: relative;
   bottom: 0;
   display: flex;
@@ -11,18 +13,79 @@
   & img {
     position: absolute;
     z-index: 2;
-    width: 5rem;
-    height: 5rem;
+    left: 3%;
+    top:10%;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
   }
-  & p {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    width: 100%;
-    color: white;
-    font-size: 12px;
+  & p:first-of-type {
+        position: relative;
+        z-index: 1;
+        margin:3% auto;
+        text-align: center;
+        width: 100%;
+        color: white;
+    font-size: 10px;
     font-family: var(--font);
     font-weight: bold;
   }
+  & p:last-of-type {
+    color: white;
+    font-family: var(--font);
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    border-left: none;
+    text-align:center;
+    border-top: solid white 2px;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 450px) {
+  .container-footer {
+     display: flex;
+  flex-direction: row;
+     & img {
+      left: 18%;
+      top: 5%;
+   
+  }
+   & p:first-of-type {
+    width: 100%;
+    margin-top:15%;
+  }
+  & p:last-of-type {
+    width: 100%;
+    padding: 10px;
+    padding-left: 5%;
+    border-left: solid white 2px;
+    border-top: none;
+  }}
+}
+@media screen and (min-width: 500px) {
+  .container-footer {
+    & img {
+      left: 20%;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container-footer {
+    & img {
+      top: 0;
+      left: 0;
+      position: relative;
+    }
+    & p:first-of-type {
+      margin: 0;
+      font-size: 12px;
+    }
+    & p:last-of-type {
+      font-size: 12px;
+    }
+  }
+  
 }

@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import "../styles/home.css";
 import NavLink from "next/link";
+import Image from "next/image";
 
 function Home() {
   useEffect(() => {
@@ -28,11 +29,16 @@ function Home() {
             <br /> utiles et pratiques au quotidien pour se sentir bien dans son
             corps, <br /> dans sa tête et avec son environnement.
           </p>
-        </article>
-        <div>
-          <picture></picture>
           <NavLink href="/les-jeux">Voir les jeux disponibles</NavLink>
-        </div>
+        </article>
+        <picture>
+          <Image
+            width={4000}
+            height={3000}
+            src={"/images/library/picture-first-home.jpg"}
+            alt=""
+          />
+        </picture>
       </section>
       <section className="container-card-two">
         <article>
@@ -51,13 +57,20 @@ function Home() {
             <br />
             scénarios.
           </p>
-        </article>
-        <div>
-          <picture></picture>
           <div>
             <NavLink href="/les-jeux">Le jardin de l&#39;Olympe</NavLink>
             <NavLink href="/les-jeux">L&#39;atelier communication</NavLink>
           </div>
+        </article>
+        <div>
+          <picture>
+            <Image
+              width={4000}
+              height={2200}
+              alt=""
+              src={"/images/library/two-picture-home.jpg"}
+            />
+          </picture>
         </div>
       </section>
       <section className="container-card-one">
@@ -76,13 +89,19 @@ function Home() {
             <br />
             Loire-Atlantique, Maine-et-Loire et Vendée.
           </p>
-        </article>
-        <div>
-          <picture></picture>
           <NavLink href="/contact">
             Contactez-nous pour plus <br /> d&#39;informations
           </NavLink>
-        </div>
+        </article>
+        <picture>
+          <Image
+            width={4000}
+            height={3500}
+            quality={100}
+            alt=""
+            src={"/images/library/picture-three-home.jpg"}
+          />
+        </picture>
       </section>
       <section className="container-card-three">
         <article>
@@ -108,13 +127,20 @@ function Home() {
             professionnels de la communication tous passionnés par
             l&#39;éducation.
           </p>
-        </article>
-        <div>
-          <picture></picture>
           <div>
             <NavLink href="/A-propos">En savoir plus</NavLink>
             <NavLink href="/nous-aider">Nous aider</NavLink>
           </div>
+        </article>
+        <div>
+          <picture>
+            <Image
+              width={5000}
+              height={3500}
+              alt=""
+              src={"/images/library/picture-four-home.jpg"}
+            />
+          </picture>
         </div>
       </section>
     </main>
