@@ -9,7 +9,7 @@
   width: 100%;
   background-color: #be2e27;
   align-items: center;
-  margin-top: 6%;
+  margin-top: 10%;
   & img {
     position: absolute;
     z-index: 2;

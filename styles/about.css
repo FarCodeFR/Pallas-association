@@ -13,6 +13,7 @@
 .container-about > section {
   display: flex;
   gap: 1.5rem;
+  margin-top: 10em;
   flex-direction: column;
   width: 100%;
   text-align: center;
@@ -180,7 +181,7 @@
 @media screen and (min-width:900px ) {
   .container-about > section {
   width: 80%;
-  margin: 0 auto;
+  margin: 10% auto;
   text-align: center;
   & h2 {
     font-size: 40px;
