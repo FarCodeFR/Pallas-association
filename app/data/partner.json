@@ -1,52 +1,52 @@
 [
   {
     "id": 1,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de la présidente"
+    "image": "/images/logo-partners/animaje.png",
+    "alt": "Logo Animaje"
   },
   {
     "id": 2,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo du trésorier"
+    "image": "/images/logo-partners/CCI-NSN.png",
+    "alt": "Logo CCI NSN"
   },
   {
     "id": 3,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/entreprendre-territoires.png",
+    "alt": "Logo Entreprendre Territoires"
   },
   {
     "id": 4,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/les-ecossolies.jpeg",
+    "alt": "Logo Les Ecossolies"
   },
   {
     "id": 5,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/Les-faits-papillon.png",
+    "alt": "Logo Les faits papillon"
   },
   {
     "id": 6,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/logo_clisson.png",
+    "alt": "Logo Clisson"
   },
   {
     "id": 7,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/logo-ft.png",
+    "alt": "Logo FT"
   },
   {
     "id": 8,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/logo-safir.png",
+    "alt": "Logo Safir"
   },
   {
     "id": 9,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/niels-adde.avif",
+    "alt": "Logo Niels Adde"
   },
   {
     "id": 10,
-    "image": "/images/logo-waiting.png",
-    "alt": "photo de l'inventeur"
+    "image": "/images/logo-partners/parc-cabanes-petit.gif",
+    "alt": "Logo Parc Cabanes Petit"
   }
 ]

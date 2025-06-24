@@ -1,23 +1,23 @@
  [
     {
       "id": "1",
-      "name": "Justine",
-      "image": "/images/profil-image.png",
+      "name": "Aurelie",
+      "image": "/images/office/presidente.jpg",
       "post": "Présidente",
       "alt": "photo de la présidente"
     },
     {
       "id": "2",
-      "name": "Paul",
-      "image": "/images/profil-image.png",
+      "name": "Alexandre",
+      "image": "/images/office/trésorier.jpg",
       "post": "Trésorier",
       "alt": "photo du trésorier"
     },
     {
       "id": "3",
-      "name": "Robert",
-      "image": "/images/profil-image.png",
-      "post": "Inventeur",
-      "alt": "photo de l'inventeur"
+      "name": "Margaux",
+      "image": "/images/office/secrétaire.jpg",
+      "post": "Secrétaire",
+      "alt": "photo de la secrétaire"
     }
   ]
