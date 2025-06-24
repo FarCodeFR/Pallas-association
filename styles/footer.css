@@ -9,7 +9,7 @@
   width: 100%;
   background-color: #be2e27;
   align-items: center;
-  margin-top: 10%;
+ margin-top: 15%;
   & img {
     position: absolute;
     z-index: 2;
@@ -17,6 +17,7 @@
     top:10%;
     width: 4rem;
     height: 4rem;
+
     border-radius: 50%;
   }
   & p:first-of-type {
@@ -47,6 +48,7 @@
   .container-footer {
      display: flex;
   flex-direction: row;
+  margin-top: 8%;
      & img {
       left: 18%;
       top: 5%;
@@ -84,6 +86,7 @@
       font-size: 12px;
     }
     & p:last-of-type {
+      margin: 0;
       font-size: 12px;
     }
   }
