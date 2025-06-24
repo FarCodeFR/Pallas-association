@@ -13,7 +13,8 @@
 .container-games {
   & h1 {
     text-align: center;
-    margin: 8% auto;
+    margin-top: 25%;
+    margin-bottom: 10% ;
     font-size:40px ;
     font-family: var(--font);
   }
@@ -35,6 +36,9 @@
 }
 
 @media screen and (min-width: 1350px) {
+  .container-games {
+    h1 {margin-top: 8%;}
+  }
   /* first carrousel */
   .first-carrousel > img {
     position: absolute;
