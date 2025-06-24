@@ -52,7 +52,12 @@ function Help() {
           dons mensuels qui nous permettent d’avoir une trésorerie sans tension.
         </p>
         <div>
-          <NavLink href="">Je donne via HelloAsso</NavLink>
+          <NavLink
+            target="_blank"
+            href="https://www.helloasso.com/associations/pallas-education-et-ludopedagogie"
+          >
+            Je donne via HelloAsso
+          </NavLink>
         </div>
       </section>
       <section id="time">
@@ -64,8 +69,18 @@ function Help() {
           différentes plateformes:
         </p>
         <div>
-          <NavLink href="">Benevolt.fr</NavLink>
-          <NavLink href="">Komeet.cc</NavLink>
+          <NavLink
+            target="_blanck"
+            href="https://www.benevolt.fr/association/pallas-education-et-ludopedagogie"
+          >
+            Benevolt.fr
+          </NavLink>
+          <NavLink
+            target="_blanck"
+            href="https://app.wenabi.com/#/profile/association/28730"
+          >
+            Komeet.cc
+          </NavLink>
           <NavLink href="contact">J&#39;aimerai participer autrement</NavLink>
         </div>
       </section>
