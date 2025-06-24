@@ -13,7 +13,7 @@
 .container-games {
   & h1 {
     text-align: center;
-    margin: 5% auto;
+    margin: 8% auto;
     font-size:40px ;
     font-family: var(--font);
   }
