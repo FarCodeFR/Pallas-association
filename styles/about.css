@@ -134,6 +134,9 @@
 .partner-item {
   width: 100px;
   height: 100px;
+  & img {
+    object-fit: contain;
+  }
 }
 
 .style-line-about {
